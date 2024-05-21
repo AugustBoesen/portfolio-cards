@@ -20,19 +20,19 @@ export default function Footer() {
             <li>
               <SocialIcon
                 className="ml-1 max-w-9"
-                url="https://www.instagram.com/"
+                url="https://www.instagram.com/jytkypappa555/?hl=fi"
               />
             </li>
             <li>
               <SocialIcon
                 className="ml-1 max-w-9"
-                url="https://www.linkedin.com/"
+                url="https://www.linkedin.com/in/severi-boesen-71a0b31a7/"
               />
             </li>
             <li>
               <SocialIcon
-                className="ml-1 max-w-9"
-                url="https://www.youtube.com/"
+                className="www.youtube.com/@scionicmusic"
+                url=" 	www.youtube.com/@scionicmusic"
               />
             </li>
             <li>

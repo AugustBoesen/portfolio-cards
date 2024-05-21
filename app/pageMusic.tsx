@@ -4,37 +4,37 @@ import Image from 'next/image';
 const cardData = [
   {
     title: 'Electronic Dance',
-    link: 'https://example.com/card1',
+    link: 'https://open.spotify.com/album/5f1ZgjsnmyZd0Z1PPZavHE?si=-AGScI7DRGK4CToP_-8gNg',
     image: '/edm.jpg',
     description: 'A 3-piece 2010s EDM EP on spotify',
   },
   {
     title: 'Modern Folk',
-    link: 'https://example.com/card1',
+    link: 'https://www.youtube.com/playlist?list=PLz_U02zhwPBoHkLjGtvRWaE2Aq_CIOZWB',
     image: '/folk.png',
     description: 'Traditional folk elements with modern rhythm',
   },
   {
     title: 'Modern pop',
-    link: 'https://example.com/card1',
+    link: 'https://open.spotify.com/artist/4aPGiD72YUspyHkT368CU9?si=0a3df8a6e25e44c8',
     image: '/pop.png',
     description: 'Music for the masses with modern quality',
   },
   {
     title: 'Ghibli-esque',
-    link: 'https://example.com/card1',
+    link: 'https://www.youtube.com/watch?v=fsqnk1I7fLw',
     image: '/ghibli.png',
     description: 'A more classical take with, inspired by Joe Hisaishi',
   },
   {
     title: 'Music for visuals',
-    link: 'https://example.com/card1',
+    link: 'https://www.youtube.com/watch?v=sB6h382N_a8',
     image: '/jazz.png',
     description: 'An entirely self-made 3D music video',
   },
   {
     title: 'Commissions',
-    link: 'https://example.com/card1',
+    link: 'https://www.dropbox.com/s/041z00enzadhmuh/GradiaMusiikin%20esittelyvideo.mp4?st=tkr6a2kh&dl=0',
     image: '/commission.png',
     description: 'Commissional pieces,  mixing & mastering',
   },
