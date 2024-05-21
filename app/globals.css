@@ -3,31 +3,100 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  @apply bg-black text-white overflow-x-hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+header {
+  @apply top-0 absolute w-full flex justify-center z-50 bg-black bg-opacity-30 py-3;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+header button {
+  @apply border border-white rounded-xl px-2 mx-2 hover:text-black hover:bg-white transition-all duration-200;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+header button.active {
+  @apply bg-white text-black text-xl px-6;
+}
+
+footer {
+  @apply bottom-0 fixed w-full flex justify-center z-40 bg-black bg-opacity-30 min-h-[5vh];
+}
+
+footer div {
+  @apply absolute w-48 h-48 -right-24 -top-8 -rotate-45 bg-white transition-transform text-black;
+}
+
+footer div button {
+  @apply text-black ml-16 transition-all;
+}
+
+footer div.active {
+  @apply bg-white text-xl px-6 -rotate-90 scale-[3];
+}
+
+footer div.active p {
+  @apply absolute text-black left-[6.8rem] top-20 text-nowrap z-50 text-[0.3rem] rotate-90 p-0;
+  line-height: 0.5rem;
+}
+
+footer div.active button {
+  @apply rotate-90 rounded-full scale-[0.4] ml-[8.5rem] -mt-[1rem] px-2 py-1 font-mono text-5xl;
+}
+main {
+  @apply min-h-[100vh] flex justify-center flex-col-reverse lg:flex-row pt-20;
+}
+
+section {
+  @apply lg:min-w-[50vw] px-6 h-full min-h-[80vh];
+}
+
+h1 {
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-3 mt-4;
+}
+
+h2 {
+  @apply text-xl sm:text-2xl md:text-3xl mb-1 mt-8 border-t border-l border-emerald-950 p-1 rounded-tl bg-black bg-opacity-10 rounded-br-2xl;
+}
+
+h3 {
+  @apply text-xl sm:text-2xl md:text-3xl my-2;
+}
+
+a {
+  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl transition-all opacity-80 hover:opacity-100;
+}
+
+p {
+  @apply text-base py-4;
+}
+
+.pageMusic {
+  @apply bg-opacity-50 -mr-1 border-r-2;
+}
+
+.music-card {
+  @apply border border-black my-4 shadow-2xl bg-left hover:bg-center rounded-md transition-all duration-500;
+}
+
+.pageEvents {
+  @apply bg-opacity-50;
+}
+
+.pageCode {
+  @apply bg-opacity-50  -ml-1 border-l-2;
+}
+
+.pageDefault {
+  @apply lg:pl-16;
+}
+
+.defaultpage-picture {
+  @apply rounded-full rounded-bl-none;
+}
+
+.shadow-inner-2 {
+  --tw-shadow: inset 0 4px 14px 0 rgb(0 0 0 / 0.6);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
