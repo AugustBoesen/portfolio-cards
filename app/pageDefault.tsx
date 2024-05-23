@@ -3,28 +3,20 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 function currentAge() {
-  const birthday = new Date('1999-05-04');
   const today = new Date();
-  let years = today.getFullYear() - birthday.getFullYear();
-  let months = today.getMonth() - birthday.getMonth();
-  let days = today.getDate() - birthday.getDate();
+  const birthday = new Date('1999-05-04');
+  const timeDifference = today.getTime() - birthday.getTime();
 
-  // Check if the current month and day are before the birthday month and day
-  if (months < 0 || (months === 0 && days < 0)) {
-    years--;
-    months += 12;
-  }
-
-  // Check if the current day is before the birthday day
-  if (days < 0) {
-    months--;
-    const previousMonth = new Date(
-      today.getFullYear(),
-      today.getMonth() - 1,
-      0
-    );
-    days = previousMonth.getDate() + days;
-  }
+  const years = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 365.25));
+  const months = Math.floor(
+    (timeDifference % (1000 * 60 * 60 * 24 * 365.25)) /
+      (1000 * 60 * 60 * 24 * 30.4375)
+  );
+  const days = Math.floor(
+    ((timeDifference % (1000 * 60 * 60 * 24 * 365.25)) %
+      (1000 * 60 * 60 * 24 * 30.4375)) /
+      (1000 * 60 * 60 * 24)
+  );
 
   return years;
 }
@@ -48,20 +40,24 @@ if (new Date().getHours() >= 18 || new Date().getHours() < 6) {
 }
 
 export default function Default() {
+  const bgImage = '/defaultbg.jpg';
+  const cvImage1 = '/cv-picture1.jpg';
+  const cvImage2 = '/cv-picture1.jpg';
+  const currentAgeValue = currentAge();
+
   return (
-    <main className="pageDefault">
+    <main className='pageDefault'>
       <Image
-        src={'/defaultbg.jpg'}
-        alt="bg1"
+        src={bgImage}
+        alt='bg1'
         fill
         quality={1}
-        sizes="(100vw, 100vh)"
-        className="-z-50 blur-3xl opacity-50"
+        className='-z-50 blur-3xl opacity-50'
       />
-      <section className=" bg-gradient-to-br from-slate-900  bg-opacity-10 shadow-inner-2 border border-slate-800">
+      <section className='bg-gradient-to-br from-slate-900 bg-opacity-10 shadow-inner-2 border border-slate-800'>
         <h1>{greeting}</h1>
         <p>
-          My name is Severi. I'm a {currentAge()} years old sinewy savonian
+          My name is Severi. I'm a {currentAgeValue} years old sinewy savonian
           fellow with a passion to create and improve.
         </p>
         <p>
@@ -76,20 +72,21 @@ export default function Default() {
         </p>
       </section>
       <section>
-        <div className="flex justify-center">
+        <div className='flex justify-center'>
           <Image
-            className=" blur-3xl opacity-70 absolute defaultpage-picture scale-75 md:scale-100 lg:mt-16 my-6"
-            src="/cv-picture1.jpg"
-            alt="cv-picture1"
+            src={cvImage1}
+            alt='cv-picture1'
             width={420}
             height={500}
+            className='blur-3xl opacity-70 absolute defaultpage-picture scale-75 md:scale-100 lg:mt-16 my-6'
           />
           <Image
-            className="defaultpage-picture scale-75 md:scale-100  lg:mt-16 my-6"
-            src="/cv-picture1.jpg"
-            alt="cv-picture2"
+            src={cvImage2}
+            alt='cv-picture2'
             width={420}
             height={500}
+            className='defaultpage-picture scale-75 md:scale-100 lg:mt-16 my-6'
+            priority
           />
         </div>
       </section>

@@ -42,16 +42,15 @@ const cardData = [
 
 export default function Music() {
   return (
-    <main className="pageMusic">
+    <main className='pageMusic'>
       <Image
-        src={'/musicbg.jpg'}
-        alt="bg1"
+        src='/musicbg.jpg'
+        alt='bg1'
         fill
         quality={1}
-        sizes="(100vw, 100vh)"
-        className="-z-50 blur-3xl opacity-30"
+        className='-z-50 blur-3xl opacity-30'
       />
-      <section className="bg-gradient-to-br from-cyan-950  to-50% shadow-inner-2 border border-cyan-950">
+      <section className='bg-gradient-to-br from-cyan-950 to-50% shadow-inner-2 border border-cyan-950'>
         <h1>MUSIC</h1>
         <p>
           I started producing music early in 2014, initially doing an internship
@@ -71,19 +70,17 @@ export default function Music() {
         </p>
       </section>
       <section>
-        {cardData.map((card) => (
-          <div
-            className="music-card"
-            key={card.title}
-            style={{
-              backgroundImage: `url(${card.image})`,
-            }}
+        {cardData.map(({ title, link, image, description }) => (
+          <article
+            key={title}
+            className='music-card'
+            style={{ backgroundImage: `url(${image})` }}
           >
-            <div className=" z-10 bg-black bg-opacity-60 md:w-[30rem] pl-6 pt-2 blur-none">
-              <a href={card.link}>{card.title}</a>
-              <p className="border-t mr-4 pb-4">{card.description}</p>
+            <div className='z-10 bg-black bg-opacity-60 md:w-[30rem] pl-6 pt-2 blur-none'>
+              <a href={link}>{title}</a>
+              <p className='border-t mr-4 pb-4'>{description}</p>
             </div>
-          </div>
+          </article>
         ))}
       </section>
     </main>
