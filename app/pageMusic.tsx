@@ -78,7 +78,9 @@ export default function Music() {
           >
             <div className='z-10 bg-black bg-opacity-60 md:w-[30rem] pl-6 pt-2 blur-none'>
               <a href={link}>{title}</a>
-              <p className='border-t mr-4 pb-4'>{description}</p>
+              <p className='border-t mr-4 pb-4 md:text-base text-sm'>
+                {description}
+              </p>
             </div>
           </article>
         ))}
