@@ -12,7 +12,7 @@ const eventsList = [
   {
     title: 'Thematic festivities',
     image: '/events/entertainment.png',
-    text: 'From music festivals to LARP events.',
+    text: 'From music festivals to LARPs to LARP festivals.',
   },
   {
     title: 'Coaching events',
