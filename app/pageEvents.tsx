@@ -35,22 +35,39 @@ export default function Events() {
         />
         <h1>EVENTS</h1>
         <p>
-          Currently I have organized over 50+ different events with at least 15
-          participants that can be regarded as project-based by organizational
-          methods. This does not include freeform events, such as parties or
-          get-togethers.
+          <b>Currently I have organized</b> over 50+ different events with at
+          least 15 participants that can be regarded as project-based by
+          organizational methods. This does not include freeform events, such as
+          parties or get-togethers.
         </p>
         <p>
-          I have done project coordination, webmastering and communications
-          correspondency for events up to 800+ participants. Many of these
-          projects have included planning, implementation and uptime in various
-          forms. I also have experience in both non-profit and for-profit
-          budgeting, merchandizing and recruitment.
+          <b>I have done</b> project coordination, webmastering and
+          communications correspondency for events up to 800+ participants. Many
+          of these projects have included planning, implementation and uptime in
+          various forms. I also have experience in both non-profit and
+          for-profit budgeting, merchandizing and recruitment.
         </p>
         <p>
-          In past projects, I have gotten positive feedback regarding teamwork
-          skills, communication and ability to extensively design project
-          frameworks, such as boards, sheets and design documentation.
+          <b>In past projects</b>, I have gotten positive feedback regarding
+          teamwork skills, communication and ability to extensively design
+          project frameworks, such as boards, sheets and design documentation.
+          In addition to that I have gotten positive results from executing
+          marketing strategies by producing effective content from{' '}
+          <a
+            className="text-base text-fuchsia-100 underline"
+            href="https://sotahuuto.fi/tapahtumapaikka-ajankohta-2024/"
+          >
+            blog/newsletters
+          </a>{' '}
+          to{' '}
+          <a
+            className="text-base text-fuchsia-100 underline"
+            href="https://www.dropbox.com/s/041z00enzadhmuh/GradiaMusiikin%20esittelyvideo.mp4?st=tkr6a2kh&dl=0"
+          >
+            {' '}
+            infomercial videos
+          </a>
+          .
         </p>
       </section>
       <section className=" content-center mt-5">

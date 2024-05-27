@@ -61,18 +61,29 @@ export default function Default() {
       <section className=" bg-gradient-to-br from-slate-900  bg-opacity-10 shadow-inner-2 border border-slate-800">
         <h1>{greeting}</h1>
         <p>
-          My name is Severi. I'm a {currentAge()} years old sinewy savonian
-          fellow with a passion to create and improve.
+          <b>My name is Severi.</b> I'm a {currentAge()} years old sinewy
+          savonian fellow with a passion to create and improve. Welcome to my
+          portfolio website.
         </p>
         <p>
-          I'm an avid producer of music, a student of code and an experienced
-          coordinator of events. You being here might be because you are looking
-          for something along those lines. In this website, you can take a look
-          at what I've been up to during the course of my life.
+          <b>
+            I'm an avid producer of music, experienced coordinator of events and
+            a coder-in-training.
+          </b>{' '}
+          You being here might be because you are looking for something along
+          those lines. In this website, you can take a look at what I've been up
+          to during the course of my life.
         </p>
         <p>
-          Feel free to look around and, from the bottom right corner, shoot a
-          message my way if anything piqued your interest!
+          <b>In addition</b> to these fields of expertise, I've got an advanced
+          degree from dance studies. I do creative writing through designing &
+          hosting tabletop RPGs. Lastly, I regularly enjoy padded combat sports.
+          I've been described as an outgoing and active person, but I'm also
+          quite content with having slower days as well.
+        </p>
+        <p>
+          <b>Feel free to look around</b> and, from the bottom right corner,
+          shoot a message my way if anything piqued your interest!
         </p>
       </section>
       <section>

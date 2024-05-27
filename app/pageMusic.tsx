@@ -54,20 +54,23 @@ export default function Music() {
       <section className="bg-gradient-to-br from-cyan-950  to-50% shadow-inner-2 border border-cyan-950">
         <h1>MUSIC</h1>
         <p>
-          I started producing music early in 2014, initially doing an internship
-          for a video game company. After that, I've gone to a high school of
-          arts, attained a vocational qualification in music and went on to
-          produce all kinds of tracks. My major instruments have been keys and
-          drums, but I've dabbled on many others over the course of these years.
+          <b>I started </b>producing music early in 2014, initially doing an
+          internship for a video game company. After that, I've gone to a high
+          school of arts, attained a vocational qualification in music and went
+          on to produce all kinds of tracks. My major instruments have been keys
+          and drums, but I've dabbled on many others over the course of these
+          years.
         </p>
         <p>
-          I specialize in virtual instrumentation and ambiental sound design. My
-          portfolio may suggest on genre specialty, but modern folk, pop and EDM
-          have always been my main focuses.
+          <b>I specialize</b> in virtual instrumentation and ambiental sound
+          design. Modern folk, pop and EDM have been my main focuses. I've also
+          got some experience working on metal and jazz pieces.
         </p>
         <p>
-          In addition to full tracks, I have also done commissional work no
-          mixing, mastering and video production assistance.
+          <b>In addition</b> to full tracks, I have also done commissional work
+          no mixing, mastering and video production assistance. While my
+          portfolio stands to showcase diversity, I'm always up for producing
+          short demo tracks to gain perspective of what <i>you</i> may desire.
         </p>
       </section>
       <section>

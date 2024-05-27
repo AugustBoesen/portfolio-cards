@@ -92,11 +92,6 @@ const skillSet2 = [
     color: '#607d8b',
   },
   {
-    name: 'Blender',
-    image: '/skillsetlogos/blender.png',
-    color: '#ff9800',
-  },
-  {
     name: 'WordPress',
     image: '/skillsetlogos/wordpress.png',
     color: '#b0bec5',
@@ -126,21 +121,26 @@ export default function Code() {
       <section className="bg-gradient-to-br from-emerald-950 to-70% shadow-inner-2 border border-emerald-950">
         <h1>CODE</h1>
         <p>
-          I am currently studying Business Information Technology at JAMK. My
-          current studies consist of learning fullstack, but I have specialized
-          in frontend and design.
+          <b>I'm currently studying</b> Business Information Technology at JAMK.
+          My current studies consist of learning fullstack, but I have
+          specialized in frontend and design.
         </p>
         <p>
-          I'm a native Javascript/Typescript developer with a strong
-          understanding of several frameworks and basic software architecture.
-          This particular website has been built with Next.js using Tailwind
-          CSS, Framer Motion and some additional react components. Excluding the
-          carousel component in the events section, everything is self-made.
+          <b>
+            I'm a native <span className="text-yellow-200">Javascript</span>/
+            <span className="text-cyan-200">Typescript</span> developer
+          </b>{' '}
+          with a strong understanding of several frameworks and basic software
+          architecture. This particular website has been built with{' '}
+          <span className="text-sky-100">Next.js</span> using{' '}
+          <span className="text-sky-300">Tailwind CSS</span> and Framer Motion.
+          Excluding the carousel component in the events section, everything is
+          self-made.
         </p>
         <p>
-          In addition to my studies, I have done personal research in game
-          development through Godot. I also have gone through basics of some
-          other coding languages in order to understand them better. I am
+          <b>In addition to my studies</b>, I have done personal research in
+          game development through Godot. I also have gone through basics of
+          some other coding languages in order to understand them better. I am
           relatively quick at learning new concepts and technologies if needed.
         </p>
       </section>

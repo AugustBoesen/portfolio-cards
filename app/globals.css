@@ -7,7 +7,7 @@
 }
 
 header {
-  @apply top-0 absolute w-full flex justify-center z-50 bg-black bg-opacity-30 py-3;
+  @apply border-b backdrop-blur top-0 absolute w-full flex justify-center z-50 bg-black bg-opacity-30 py-3;
 }
 
 header button {
