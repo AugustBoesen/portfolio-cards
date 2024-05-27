@@ -1,113 +1,66 @@
 /* eslint-disable react/no-unescaped-entities */
-import { color, motion } from 'framer-motion';
 import Image from 'next/image';
 
-const skillSet1 = [
-  {
-    name: 'HTML',
-    image: '/skillsetlogos/html.png',
-    color: '#d50000',
-    level: 9,
-  },
-  {
-    name: 'CSS',
-    image: '/skillsetlogos/css.png',
-    color: '#1976d2',
-    level: 10,
-  },
-  {
-    name: 'JS/TS',
-    image: '/skillsetlogos/js.png',
-    color: '#ffa000',
-    level: 8,
-  },
-  {
-    name: 'Python',
-    image: '/skillsetlogos/python.png',
-    color: '#f57f17',
-    level: 3,
-  },
-  {
-    name: 'C#',
-    image: '/skillsetlogos/csharp.png',
-    color: '#673ab7',
-    level: 2,
-  },
-];
-
-const skillSet2 = [
-  {
-    name: 'VSCode',
-    image: '/skillsetlogos/vscode.png',
-    color: '#d4d4d4',
-  },
-  {
-    name: 'React',
-    image: '/skillsetlogos/react.png',
-    color: '#80deea',
-  },
-  {
-    name: 'Next.js',
-    image: '/skillsetlogos/nextjs.png',
-    color: '#f5f5f5',
-  },
-  {
-    name: 'Angular',
-    image: '/skillsetlogos/angular.png',
-    color: '#dd2c00',
-  },
-  {
-    name: 'Svelte',
-    image: '/skillsetlogos/svelte.png',
-    color: '#ff3e00',
-  },
-  {
-    name: 'Tailwind CSS',
-    image: '/skillsetlogos/tailwind.png',
-    color: '#00bcd4',
-  },
-  {
-    name: 'Docker',
-    image: '/skillsetlogos/docker.png',
-    color: '#81d4fa',
-  },
-  {
-    name: 'Figma',
-    image: '/skillsetlogos/figma.webp',
-    color: '#f7f7f7',
-  },
-  {
-    name: 'Node.js',
-    image: '/skillsetlogos/node.png',
-    color: '#388e3c',
-  },
-  {
-    name: 'GitHub',
-    image: '/skillsetlogos/github.png',
-    color: '#f5f5f5',
-  },
-  {
-    name: 'Godot',
-    image: '/skillsetlogos/godot.webp',
-    color: '#607d8b',
-  },
-  {
-    name: 'WordPress',
-    image: '/skillsetlogos/wordpress.png',
-    color: '#b0bec5',
-  },
-  {
-    name: 'MongoDB',
-    image: '/skillsetlogos/mongodb.png',
-    color: '#388e3c',
-  },
-  {
-    name: 'MySQL',
-    image: '/skillsetlogos/mysql.webp',
-    color: '#b2dfdb',
-  },
-];
 export default function Code() {
+  const skillSet1 = [
+    {
+      name: 'HTML',
+      image: '/skillsetlogos/html.png',
+      color: '#d50000',
+      level: 9,
+    },
+    {
+      name: 'CSS',
+      image: '/skillsetlogos/css.png',
+      color: '#1976d2',
+      level: 10,
+    },
+    {
+      name: 'JS/TS',
+      image: '/skillsetlogos/js.png',
+      color: '#ffa000',
+      level: 8,
+    },
+    {
+      name: 'Python',
+      image: '/skillsetlogos/python.png',
+      color: '#f57f17',
+      level: 3,
+    },
+    {
+      name: 'C#',
+      image: '/skillsetlogos/csharp.png',
+      color: '#673ab7',
+      level: 2,
+    },
+  ];
+
+  const skillSet2 = [
+    { name: 'VSCode', image: '/skillsetlogos/vscode.png', color: '#d4d4d4' },
+    { name: 'React', image: '/skillsetlogos/react.png', color: '#80deea' },
+    { name: 'Next.js', image: '/skillsetlogos/nextjs.png', color: '#f5f5f5' },
+    { name: 'Angular', image: '/skillsetlogos/angular.png', color: '#dd2c00' },
+    { name: 'Svelte', image: '/skillsetlogos/svelte.png', color: '#ff3e00' },
+    {
+      name: 'Tailwind CSS',
+      image: '/skillsetlogos/tailwind.png',
+      color: '#00bcd4',
+    },
+    { name: 'Docker', image: '/skillsetlogos/docker.png', color: '#81d4fa' },
+    { name: 'Figma', image: '/skillsetlogos/figma.webp', color: '#f7f7f7' },
+    { name: 'Node.js', image: '/skillsetlogos/node.png', color: '#388e3c' },
+    { name: 'GitHub', image: '/skillsetlogos/github.png', color: '#f5f5f5' },
+    { name: 'Godot', image: '/skillsetlogos/godot.webp', color: '#607d8b' },
+    { name: 'Blender', image: '/skillsetlogos/blender.png', color: '#ff9800' },
+    {
+      name: 'WordPress',
+      image: '/skillsetlogos/wordpress.png',
+      color: '#b0bec5',
+    },
+    { name: 'MongoDB', image: '/skillsetlogos/mongodb.png', color: '#388e3c' },
+    { name: 'MySQL', image: '/skillsetlogos/mysql.webp', color: '#b2dfdb' },
+  ];
+
   return (
     <main className="pageCode">
       <Image
@@ -147,53 +100,53 @@ export default function Code() {
       <section>
         <h2>Primary skills</h2>
         <div className="bg-black bg-opacity-10">
-          {skillSet1.map((skill) => (
+          {skillSet1.map(({ name, image, color, level }) => (
             <div
-              key={skill.name}
-              className="flex items-center my-4 ml-5  "
-              style={{ color: skill.color }}
+              key={name}
+              className="flex items-center my-4 ml-5"
+              style={{ color }}
             >
               <div className="ml-2 w-full bg-gray-800 h-4 max-w-[70%]">
                 <div
                   className={`-ml-2 inset-1 text-right h-4 skew-x-[-32deg]`}
                   style={{
-                    width: `${skill.level * 10}%`,
-                    backgroundColor: skill.color,
+                    width: `${level * 10}%`,
+                    backgroundColor: color,
                   }}
                 >
                   <p className="absolute text-white -top-5 w-full bg-none text-center skew-x-[32deg] select-none">
-                    {skill.level}
+                    {level}
                   </p>
                 </div>
               </div>
               <Image
-                src={skill.image}
+                src={image}
                 width={50}
                 height={50}
-                alt={skill.name}
+                alt={name}
                 className="w-8 h-8 ml-2 rounded"
               />
-              <div className="ml-2 select-none">{skill.name}</div>
+              <div className="ml-2 select-none">{name}</div>
             </div>
           ))}
         </div>
         <h2>Utility skillset</h2>
         <div className="grid 2xl:grid-cols-4 grid-cols-3 mb-12 bg-black bg-opacity-10">
-          {skillSet2.map((skill) => (
+          {skillSet2.map(({ name, image, color }) => (
             <div
-              key={skill.name}
-              style={{ color: skill.color }}
+              key={name}
+              style={{ color }}
               className="flex sm:justify-normal justify-center m-2 py-2 bg-white bg-opacity-10 rounded hover:bg-opacity-20 transition-all duration-300"
             >
               <Image
-                src={skill.image}
+                src={image}
                 width={50}
                 height={50}
-                alt={skill.name}
+                alt={name}
                 className="w-12 h-12 ml-2 rounded"
               />
-              <div className=" sm:block hidden mx-2 bg-black text-center w-full bg-opacity-10 rounded content-center select-none">
-                {skill.name}
+              <div className="sm:block hidden mx-2 bg-black text-center w-full bg-opacity-10 rounded content-center select-none">
+                {name}
               </div>
             </div>
           ))}

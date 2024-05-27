@@ -12,12 +12,12 @@ export default function Home() {
   const { pageValue } = useContext(currentPage);
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode='wait'>
       {pageValue && pageValue.length > 0 && (
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode='wait'>
           {pageValue === 'Music' && (
             <motion.div
-              key="music"
+              key='music'
               initial={{ opacity: 0, x: -500 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, type: 'spring' }}
@@ -28,7 +28,7 @@ export default function Home() {
           )}
           {pageValue === 'Events' && (
             <motion.div
-              key="events"
+              key='events'
               initial={{ opacity: 0, y: -500 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: 'easeInOut' }}
@@ -39,7 +39,7 @@ export default function Home() {
           )}
           {pageValue === 'Code' && (
             <motion.div
-              key="code"
+              key='code'
               initial={{ opacity: 0, x: 500 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, type: 'spring' }}
@@ -50,7 +50,7 @@ export default function Home() {
           )}
           {pageValue === 'Default' && (
             <motion.div
-              key="default"
+              key='default'
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3 }}

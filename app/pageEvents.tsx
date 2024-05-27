@@ -12,7 +12,7 @@ const eventsList = [
   {
     title: 'Thematic festivities',
     image: '/events/entertainment.png',
-    text: 'From music festivals to LARP events.',
+    text: 'From music festivals to LARPs to LARP festivals.',
   },
   {
     title: 'Coaching events',
@@ -26,7 +26,7 @@ export default function Events() {
     <main className="pageEvents">
       <section className="bg-gradient-to-br from-fuchsia-950 to-50% shadow-inner-2 border border-fuchsia-950">
         <Image
-          src={'/eventsbg.jpg'}
+          src="/eventsbg.jpg"
           alt="bg1"
           fill
           quality={1}
@@ -70,7 +70,7 @@ export default function Events() {
           .
         </p>
       </section>
-      <section className=" content-center mt-5">
+      <section className="content-center mt-5">
         <Carousel
           showArrows={true}
           showIndicators={true}
@@ -78,22 +78,26 @@ export default function Events() {
           dynamicHeight={false}
           className=""
         >
-          {eventsList.map((item) => (
-            <div key={item.title} className="">
+          {eventsList.map(({ title, image, text }) => (
+            <motion.div
+              key={title}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+            >
               <div className="border border-fuchsia-950 rounded-2xl">
                 <Image
                   className="sm:min-h-[43rem] min-h-[20rem] object-cover opacity-80 rounded-2xl"
-                  src={item.image}
+                  src={image}
                   width={1200}
                   height={800}
                   alt="slides"
                 />
               </div>
               <div className="bg-black border-b border-fuchsia-950 border-x h-32 -mt-32 absolute w-full bg-opacity-80 rounded-b-2xl">
-                <h3>{item.title}</h3>
-                <p className="">{item.text}</p>
+                <h3>{title}</h3>
+                <p className="">{text}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </Carousel>
       </section>

@@ -47,7 +47,7 @@ main {
 }
 
 section {
-  @apply lg:min-w-[50vw] px-6 h-full min-h-[80vh];
+  @apply lg:min-w-[50vw] px-6 h-full md:min-h-[80vh] min-h-[70vh];
 }
 
 h1 {
