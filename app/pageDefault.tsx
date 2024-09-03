@@ -46,46 +46,57 @@ export default function Default() {
   const currentAgeValue = currentAge();
 
   return (
-    <main className='pageDefault'>
+    <main className="pageDefault">
       <Image
         src={bgImage}
-        alt='bg1'
+        alt="bg1"
         fill
         quality={1}
-        className='-z-50 blur-3xl opacity-50'
+        className="-z-50 blur-3xl opacity-50"
       />
-      <section className='bg-gradient-to-br from-slate-900 bg-opacity-10 shadow-inner-2 border border-slate-800'>
+      <section className="bg-gradient-to-br from-slate-900 bg-opacity-10 shadow-inner-2 border border-slate-800">
         <h1>{greeting}</h1>
         <p>
-          My name is Severi. I'm a {currentAgeValue} years old sinewy savonian
-          fellow with a passion to create and improve.
+          <b>My name is Severi.</b> I'm a {currentAge()} years old sinewy
+          savonian fellow with a passion to create and improve. Welcome to my
+          portfolio website.
         </p>
         <p>
-          I'm an avid producer of music, a student of code and an experienced
-          coordinator of events. You being here might be because you are looking
-          for something along those lines. In this website, you can take a look
-          at what I've been up to during the course of my life.
+          <b>
+            I'm an avid producer of music, experienced coordinator of events and
+            a coder-in-training.
+          </b>{' '}
+          You being here might be because you are looking for something along
+          those lines. In this website, you can take a look at what I've been up
+          to during the course of my life.
         </p>
         <p>
-          Feel free to look around and, from the bottom right corner, shoot a
-          message my way if anything piqued your interest!
+          <b>In addition</b> to these fields of expertise, I've got an advanced
+          degree from dance studies. I do creative writing through designing &
+          hosting tabletop RPGs. Lastly, I regularly enjoy padded combat sports.
+          I've been described as an outgoing and active person, but I'm also
+          quite content with having slower days as well.
+        </p>
+        <p>
+          <b>Feel free to look around</b> and, from the bottom right corner,
+          shoot a message my way if anything piqued your interest!
         </p>
       </section>
       <section>
-        <div className='flex justify-center'>
+        <div className="flex justify-center">
           <Image
             src={cvImage1}
-            alt='cv-picture1'
+            alt="cv-picture1"
             width={420}
             height={500}
-            className='blur-3xl opacity-70 absolute defaultpage-picture scale-75 md:scale-100 lg:mt-16 my-6'
+            className="blur-3xl opacity-70 absolute defaultpage-picture scale-75 md:scale-100 lg:mt-16 my-6"
           />
           <Image
             src={cvImage2}
-            alt='cv-picture2'
+            alt="cv-picture2"
             width={420}
             height={500}
-            className='defaultpage-picture scale-75 md:scale-100 lg:mt-16 my-6'
+            className="defaultpage-picture scale-75 md:scale-100 lg:mt-16 my-6"
             priority
           />
         </div>
