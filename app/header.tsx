@@ -48,6 +48,14 @@ export default function Header() {
       >
         Code
       </button>
+      {pageValue !== 'Default' && (
+        <button
+          className='border-none text-4xl absolute right-0 top-0.5'
+          onClick={() => setValue('Default')}
+        >
+          ↵
+        </button>
+      )}
     </header>
   );
 }
