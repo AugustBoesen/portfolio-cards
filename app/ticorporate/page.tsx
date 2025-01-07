@@ -44,6 +44,19 @@ const Ticorporate: NextPage = () => {
           width={500}
           height={500}
         />
+        <i className='text-xs absolute -mt-6 text-center w-screen left-0'>
+          Ruudukko oli sovelluksen ensimmäinen visualisaatio
+        </i>
+        <Image
+          className='mx-auto shadow-inner pb-6 mt-2 border border-slate-800'
+          src={'/ticorporate/cellcode.png'}
+          alt='css'
+          width={500}
+          height={500}
+        />
+        <i className='text-xs absolute -mt-6 text-center w-screen left-0'>
+          Toteutin nappien suhteet toisiinsa tilanhallinnassa
+        </i>
       </div>
       <div className='bg-teal-950 bg-opacity-30 px-4'>
         <h2 className='text-cyan-300 mt-16'>Ennen projektia</h2>
@@ -52,7 +65,11 @@ const Ticorporate: NextPage = () => {
           perustat olivat todettu toimiviksi. Ajatuksena oli jatkokehittää sen
           potentiaalia aputyökaluna opintojaan suorittaville
           sovelluskehittäjille (esimerkiksi 1. vuoden tietojenkäsittelyn
-          opiskelijoille).
+          opiskelijoille). Vaikka idea ei ollut mullistava
+          yrittäjyysnäkökulmasta ja tarjosi lähinnä teknistä toteutusta, omaksi
+          iloiseksi yllätyksekseni se hyväksyttiin ja pääsimme jo viime keväänä
+          mukana olleen Petri Paasilan kanssa työstämään kummallekin
+          suhteellisen mieleiseksi muodostunutta ideaa.
         </p>
         <h3>Lähtötaidot</h3>
         <p>
@@ -82,6 +99,19 @@ const Ticorporate: NextPage = () => {
           width={500}
           height={500}
         />
+        <i className='text-xs absolute -mt-6 text-center w-screen left-0'>
+          Figma-työtila oli myös hyvä visualisaatio-apu
+        </i>
+        <Image
+          className='mx-auto shadow-inner pb-6 mt-2 border border-slate-800'
+          src={'/ticorporate/css.png'}
+          alt='css'
+          width={500}
+          height={500}
+        />
+        <i className='text-xs absolute -mt-6 text-center w-screen left-0'>
+          Muotoilu on yhdistelmä TailWindiä ja raakaa CSS:ää
+        </i>
       </div>
       <div className='bg-blue-950 bg-opacity-30 px-4'>
         <h2 className='text-blue-300 mt-16'>Projektin aikana</h2>
@@ -111,7 +141,9 @@ const Ticorporate: NextPage = () => {
           tiimin kanssa kommunikoiden. UI/UX-suunnittelijana suunnittelin sekä
           implementoin sovelluksen ulkomuodon kokonaisuudessaan - olin vastuussa
           komponenttien järjestyksestä, siitä miltä kaikki näyttää ja miten
-          design ilmenee koodissa.
+          design ilmenee koodissa. Figman käyttö implementoinnissa oli myös osa
+          toteutusta, sillä esimerkiksi suunnittelin sekä ulkoistin PACKYn logon
+          Figma-työtilasta (logo myös tämän sivun yläosassa)
         </p>
         <p>
           <b>Näiden kahden lisäksi</b> toteutin kolmantena sovelluksen
@@ -121,13 +153,41 @@ const Ticorporate: NextPage = () => {
           sen toteuttamisen juuri siinä muodossa, jollaisena se
           nykymuodossaankin toimii.
         </p>
+        <p>
+          {' '}
+          <Link
+            className='text-teal-500 rounded-2xl text-base p-1'
+            href={
+              'https://github.com/jamktiko/PACKY/blob/main/src/assets/CSS/globals.css'
+            }
+            target='_blank'
+          >
+            Linkki globals.css-tiedostoon
+          </Link>
+          , josta löytyy noin 86% sovelluksen tyylittelystä ja joka on täysin
+          omaa käsialaani.
+        </p>
+
         <Image
           className='mx-auto shadow-inner pb-6 mt-2 border border-slate-800'
-          src={'/ticorporate/css.png'}
+          src={'/ticorporate/gridcode.png'}
           alt='css'
           width={500}
           height={500}
         />
+        <i className='text-xs absolute -mt-6 text-center w-screen left-0'>
+          Ruudukon näkyvyys noudattaa Manhattanin geometriaa
+        </i>
+        <Image
+          className='mx-auto shadow-inner pb-6 mt-2 border border-slate-800'
+          src={'/ticorporate/centercode.png'}
+          alt='css'
+          width={500}
+          height={500}
+        />
+        <i className='text-xs absolute -mt-6 text-center w-screen left-0'>
+          Mobiilissa näkymä keskittyy keskinapin mukaan
+        </i>
       </div>
       <div className='bg-purple-950 bg-opacity-30 px-4'>
         <h2 className='text-purple-300 mt-16'>Projektin jälkeen</h2>
@@ -158,6 +218,18 @@ const Ticorporate: NextPage = () => {
           lisäksi voidaan laskea noin 5 yksittäistä päivää (esimerkiksi
           Kauppakadun Approjen jälkeinen perjantai), jolloin pidimme tiimin
           kesken yhteisesti sovittuna vapaapäivän.
+        </p>
+        <p>
+          Kuten jo aiemmin totesin, sovelluksen idea ei ollut markkinallisesti
+          edistyksellinen verrattuna muihin projekteihin. Omasta mielestäni ja
+          opintojakson painopisteistä riippuen sen olisi voinut hylätä kokonaan,
+          sillä emme tarjonneet kattavaa markkinallista suunnitelmaa tuoton
+          suhteen. Omasta mielestäni selkeänä ideana alun perinkin oli juurikin
+          opetustyökalu sitä tarvitseville, jonka oheen opintojakson puitteissa
+          piti kehittää jonkinlainen bisnesaihio. Koska sovellus pidettiin demon
+          raameissa, emme kehittäneet esimerkiksi mainostilaa tai
+          subskriptio-käyttömallia, mutta nämä asiat keskusteltiin ja pohdittiin
+          mahdollisiksi keinoiksi vain mikäli sovellusta jatkokehitettäisiin.
         </p>
         <p>
           Olen hyvin tyytyväinen antamaani panokseen ja koen tehneeni oman
